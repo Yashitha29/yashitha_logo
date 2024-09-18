@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashitha Ayurvedic Logo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #f2cf20, #32bbe1f1); /* Green shades for an Ayurvedic feel */
+        }
+
+        #logo {
+            position: relative;
+            font-family: 'Arial', sans-serif;
+            color: #ee2f7e;
+            font-size: 50px;
+            letter-spacing: 3px;
+        }
+
+        #logo span {
+            display: inline-block;
+            animation: fadeIn 2s ease-in-out infinite alternate;
+        }
+
+        /* Animation effect for each letter */
+        #logo span:nth-child(1) { animation-delay: 0s; }
+        #logo span:nth-child(2) { animation-delay: 0.2s; }
+        #logo span:nth-child(3) { animation-delay: 0.4s; }
+        #logo span:nth-child(4) { animation-delay: 0.6s; }
+        #logo span:nth-child(5) { animation-delay: 0.8s; }
+        #logo span:nth-child(6) { animation-delay: 1s; }
+        #logo span:nth-child(7) { animation-delay: 1.2s; }
+        #logo span:nth-child(8) { animation-delay: 1.4s; }
+
+        /* Text animation */
+        @keyframes fadeIn {
+            0% {
+                transform: scale(1);
+                opacity: 0.2;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+
+        /* Adding an animated leaf to emphasize Ayurveda */
+        .leaf {
+            position: absolute;
+            top: -30px;
+            right: -70px;
+            width: 100px;
+            height: 100px;
+            background: #7cfc00;
+            border-radius: 50% 0 50% 50%;
+            transform: rotate(45deg);
+            animation: spin 5s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <span>Y</span><span>a</span><span>s</span><span>h</span><span>i</span><span>t</span><span>h</span><span>a</span><span> </span>
+        <div class="leaf"> </div> <!-- Leaf symbol -->
+        <div style="font-size: 25px; margin-top: 10px;">Ayurvedic Product</div>
+    </div>
+</body>
+</html>
